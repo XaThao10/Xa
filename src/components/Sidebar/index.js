@@ -1,5 +1,5 @@
 import './index.scss';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Navbar, Nav, Container } from "react-bootstrap";
@@ -14,16 +14,16 @@ const Sidebar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav> 
-                    <NavLink exact="true" activeclassname="active" to="https://xathao10.github.io/Xa/">
+                    <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} className='nav-icon' />HOME
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="about-link" to="https://xathao10.github.io/Xa/about">
+                    <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} className='nav-icon' /> ABOUT
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="work-link" to="https://xathao10.github.io/Xa/work">
+                    <NavLink exact="true" activeclassname="active" className="work-link" to="/work">
                     <FontAwesomeIcon icon={faLaptopCode} className='nav-icon'/> WORK
                     </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="contact-link" to="https://xathao10.github.io/Xa/contact">
+                    <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope}  className='nav-icon'/> CONTACT
                     </NavLink>
             </Nav>
